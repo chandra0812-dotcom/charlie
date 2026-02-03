@@ -1,0 +1,219 @@
+-a----         1/22/2026  12:26 PM          98304 kdcpw.dll
+-a----          1/4/2026   1:08 AM          62880 kdhvcom.dll
+-a----          1/4/2026   1:06 AM         157088 kdnet.dll
+-a----          1/4/2026   1:07 AM          58776 kdnet_uart16550.dll
+-a----         1/22/2026  12:26 PM         159744 KdsCli.dll
+-a----          1/4/2026   1:06 AM          87424 kdstub.dll
+-a----          1/4/2026   1:07 AM          87496 kdusb.dll
+-a----          1/4/2026   1:07 AM          71072 kd_02_10df.dll
+-a----          1/4/2026   1:07 AM         562592 kd_02_10ec.dll
+-a----          1/4/2026   1:07 AM          71064 kd_02_1137.dll
+-a----          1/4/2026   1:07 AM          99752 kd_02_1414.dll
+-a----          1/4/2026   1:07 AM         284048 kd_02_14e4.dll
+-a----          1/4/2026   1:07 AM          58792 kd_02_15ad.dll
+-a----          1/4/2026   1:07 AM          91552 kd_02_15b3.dll
+-a----          1/4/2026   1:07 AM          83328 kd_02_1969.dll
+-a----          1/4/2026   1:07 AM          71056 kd_02_19a2.dll
+-a----          1/4/2026   1:07 AM          62864 kd_02_1af4.dll
+-a----          1/4/2026   1:07 AM          83328 kd_02_1d0f.dll
+-a----          1/4/2026   1:07 AM         361872 kd_02_8086.dll
+-a----          1/4/2026   1:07 AM          58784 kd_07_1415.dll
+-a----          1/4/2026   1:07 AM          87440 kd_0C_8086.dll
+-a----          1/4/2026   1:00 AM          45056 keepaliveprovider.dll
+-a----         1/22/2026  12:26 PM         187440 kerb3961.dll
+-a----         1/22/2026  12:26 PM         261792 KerbClientShared.dll
+-a----         1/22/2026  12:26 PM        1409024 kerberos.dll
+-a----          1/4/2026   1:00 AM         121264 kernel.appcore.dll
+-a----         1/22/2026  12:26 PM         836144 kernel32.dll
+-a----         1/22/2026  12:26 PM        4133504 KernelBase.dll
+-a----          4/1/2024   3:22 AM            841 KeyboardSystemToastIcon.contrast-white.png
+-a----          4/1/2024   3:22 AM            523 KeyboardSystemToastIcon.png
+-a----          1/4/2026   1:01 AM         102400 KeyCredMgr.dll
+-a----          1/4/2026   1:06 AM         126976 keyiso.dll
+-a----          1/4/2026   1:03 AM          86016 keymgr.dll
+-a----          1/4/2026   1:00 AM         151552 KeywordDetectorMsftSidAdapter.dll
+-a----          4/1/2024   3:22 AM          65536 klist.exe
+-a----          1/4/2026   1:03 AM          73728 kmddsp.tsp
+-a----          1/4/2026  12:57 AM         262144 KnobsCore.dll
+-a----          1/4/2026  12:57 AM         147456 KnobsCsp.dll
+-a----          4/1/2024   3:22 AM          12876 korean.uce
+-a----          1/4/2026   1:08 AM          65536 ksetup.exe
+-a----          1/4/2026   1:08 AM         378240 ksproxy.ax
+-a----          1/4/2026   1:08 AM         136624 kstvtune.ax
+-a----          1/4/2026  12:56 AM          50944 ksuser.dll
+-a----          1/4/2026   1:08 AM         165320 Kswdmcap.ax
+-a----          1/4/2026   1:08 AM          99632 ksxbar.ax
+-a----          1/4/2026   1:07 AM          45056 ktmutil.exe
+-a----          4/1/2024   3:22 AM          45056 ktmw32.dll
+-a----          1/4/2026  12:57 AM         106496 l2gpstore.dll
+-a----          1/4/2026  12:57 AM          94208 l2nacp.dll
+-a----          1/4/2026   1:10 AM         118784 l3codeca.acm
+-a----          1/4/2026   1:10 AM         212992 l3codecp.acm
+-a----          1/4/2026   1:02 AM          40960 la57setup.exe
+-a----          4/1/2024   3:22 AM          40960 label.exe
+-a----          1/4/2026   1:00 AM         217088 LampArray.dll
+-a----          1/4/2026   1:02 AM          40960 LangCleanupSysprepAction.dll
+-a----          1/4/2026   1:02 AM         253952 LanguageComponentsInstaller.dll
+-a----          1/4/2026   1:02 AM          77824 LanguageComponentsInstallerComHandler.exe
+PS C:\WINDOWS\system32> cd "C:\Users\chand\Downloads\AWSpython"
+PS C:\Users\chand\Downloads\AWSpython> dir
+
+
+    Directory: C:\Users\chand\Downloads\AWSpython
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2/3/2026   9:28 AM           1678 charlie.pem
+
+
+PS C:\Users\chand\Downloads\AWSpython> icacls mykey.pem /inheritance:r
+mykey.pem: The system cannot find the file specified.
+Successfully processed 0 files; Failed processing 1 files
+PS C:\Users\chand\Downloads\AWSpython> icacls charlie.pem /inheritance:r icacls charlie.pem /grant:r "$($env:USERNAME):(R)"
+Invalid parameter "/inheritance:r"
+PS C:\Users\chand\Downloads\AWSpython> icacls charlie.pem /inheritance:r
+processed file: charlie.pem
+Successfully processed 1 files; Failed processing 0 files
+PS C:\Users\chand\Downloads\AWSpython> icacls charlie.pem /inheritance:r icacls charlie.pem /grant:r "$($env:USERNAME):(R)"
+Invalid parameter "/inheritance:r"
+PS C:\Users\chand\Downloads\AWSpython> icacls charlie.pem /grant:r "$($env:USERNAME):(R)"
+processed file: charlie.pem
+Successfully processed 1 files; Failed processing 0 files
+PS C:\Users\chand\Downloads\AWSpython> ssh -i charlie.pem ec2-user@54.164.85.220
+The authenticity of host '54.164.85.220 (54.164.85.220)' can't be established.
+ED25519 key fingerprint is SHA256:QGXO8o3QWDMTKWHxLRdy+GAe+9/R9DnxVAjIy6ba99U.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '54.164.85.220' (ED25519) to the list of known hosts.
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-172-31-27-139 ~]$ sudo yum update-y
+No such command: update-y. Please use /usr/bin/yum --help
+It could be a YUM plugin command, try: "yum install 'dnf-command(update-y)'"
+[ec2-user@ip-172-31-27-139 ~]$ sudo yum update -y
+Amazon Linux 2023 Kernel Livepatch repository                                                             253 kB/s |  30 kB     00:00
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-172-31-27-139 ~]$ sudo yum install git -y
+Last metadata expiration check: 0:00:32 ago on Tue Feb  3 14:56:01 2026.
+Dependencies resolved.
+==========================================================================================================================================
+ Package                           Architecture            Version                                     Repository                    Size
+==========================================================================================================================================
+Installing:
+ git                               x86_64                  2.50.1-1.amzn2023.0.1                       amazonlinux                   53 k
+Installing dependencies:
+ git-core                          x86_64                  2.50.1-1.amzn2023.0.1                       amazonlinux                  4.9 M
+ git-core-doc                      noarch                  2.50.1-1.amzn2023.0.1                       amazonlinux                  2.8 M
+ perl-Error                        noarch                  1:0.17029-5.amzn2023.0.2                    amazonlinux                   41 k
+ perl-File-Find                    noarch                  1.37-477.amzn2023.0.7                       amazonlinux                   25 k
+ perl-Git                          noarch                  2.50.1-1.amzn2023.0.1                       amazonlinux                   41 k
+ perl-TermReadKey                  x86_64                  2.38-9.amzn2023.0.2                         amazonlinux                   36 k
+ perl-lib                          x86_64                  0.65-477.amzn2023.0.7                       amazonlinux                   15 k
+
+Transaction Summary
+==========================================================================================================================================
+Install  8 Packages
+
+Total download size: 7.9 M
+Installed size: 41 M
+Downloading Packages:
+(1/8): git-2.50.1-1.amzn2023.0.1.x86_64.rpm                                                               1.4 MB/s |  53 kB     00:00
+(2/8): perl-Error-0.17029-5.amzn2023.0.2.noarch.rpm                                                       1.2 MB/s |  41 kB     00:00
+(3/8): git-core-doc-2.50.1-1.amzn2023.0.1.noarch.rpm                                                       27 MB/s | 2.8 MB     00:00
+(4/8): perl-File-Find-1.37-477.amzn2023.0.7.noarch.rpm                                                    678 kB/s |  25 kB     00:00
+(5/8): git-core-2.50.1-1.amzn2023.0.1.x86_64.rpm                                                           34 MB/s | 4.9 MB     00:00
+(6/8): perl-Git-2.50.1-1.amzn2023.0.1.noarch.rpm                                                          978 kB/s |  41 kB     00:00
+(7/8): perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64.rpm                                                    899 kB/s |  36 kB     00:00
+(8/8): perl-lib-0.65-477.amzn2023.0.7.x86_64.rpm                                                          598 kB/s |  15 kB     00:00
+------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                      37 MB/s | 7.9 MB     00:00
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                  1/1
+  Installing       : git-core-2.50.1-1.amzn2023.0.1.x86_64                                                                            1/8
+  Installing       : git-core-doc-2.50.1-1.amzn2023.0.1.noarch                                                                        2/8
+  Installing       : perl-lib-0.65-477.amzn2023.0.7.x86_64                                                                            3/8
+  Installing       : perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64                                                                      4/8
+  Installing       : perl-File-Find-1.37-477.amzn2023.0.7.noarch                                                                      5/8
+  Installing       : perl-Error-1:0.17029-5.amzn2023.0.2.noarch                                                                       6/8
+  Installing       : perl-Git-2.50.1-1.amzn2023.0.1.noarch                                                                            7/8
+  Installing       : git-2.50.1-1.amzn2023.0.1.x86_64                                                                                 8/8
+  Running scriptlet: git-2.50.1-1.amzn2023.0.1.x86_64                                                                                 8/8
+  Verifying        : git-2.50.1-1.amzn2023.0.1.x86_64                                                                                 1/8
+  Verifying        : git-core-2.50.1-1.amzn2023.0.1.x86_64                                                                            2/8
+  Verifying        : git-core-doc-2.50.1-1.amzn2023.0.1.noarch                                                                        3/8
+  Verifying        : perl-Error-1:0.17029-5.amzn2023.0.2.noarch                                                                       4/8
+  Verifying        : perl-File-Find-1.37-477.amzn2023.0.7.noarch                                                                      5/8
+  Verifying        : perl-Git-2.50.1-1.amzn2023.0.1.noarch                                                                            6/8
+  Verifying        : perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64                                                                      7/8
+  Verifying        : perl-lib-0.65-477.amzn2023.0.7.x86_64                                                                            8/8
+
+Installed:
+  git-2.50.1-1.amzn2023.0.1.x86_64              git-core-2.50.1-1.amzn2023.0.1.x86_64         git-core-doc-2.50.1-1.amzn2023.0.1.noarch
+  perl-Error-1:0.17029-5.amzn2023.0.2.noarch    perl-File-Find-1.37-477.amzn2023.0.7.noarch   perl-Git-2.50.1-1.amzn2023.0.1.noarch
+  perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64   perl-lib-0.65-477.amzn2023.0.7.x86_64
+
+Complete!
+[ec2-user@ip-172-31-27-139 ~]$ git --version
+git version 2.50.1
+[ec2-user@ip-172-31-27-139 ~]$ git clone https://github.com/chandra0812-dotcom/charlie.git
+Cloning into 'charlie'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+[ec2-user@ip-172-31-27-139 ~]$ ls
+charlie
+[ec2-user@ip-172-31-27-139 ~]$ cd charlie
+[ec2-user@ip-172-31-27-139 charlie]$ ls
+README.md
+[ec2-user@ip-172-31-27-139 charlie]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[ec2-user@ip-172-31-27-139 charlie]$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 959 bytes | 479.00 KiB/s, done.
+From https://github.com/chandra0812-dotcom/charlie
+   7c3d2b9..579e562  main       -> origin/main
+Updating 7c3d2b9..579e562
+Fast-forward
+ learn | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 learn
+[ec2-user@ip-172-31-27-139 charlie]$ ls
+README.md  learn
+[ec2-user@ip-172-31-27-139 charlie]$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 943 bytes | 943.00 KiB/s, done.
+From https://github.com/chandra0812-dotcom/charlie
+   579e562..c386edf  main       -> origin/main
+Updating 579e562..c386edf
+Fast-forward
+ test.1 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.1
+[ec2-user@ip-172-31-27-139 charlie]$ ls
+README.md  learn  test.1
+[ec2-user@ip-172-31-27-139 charlie]$
